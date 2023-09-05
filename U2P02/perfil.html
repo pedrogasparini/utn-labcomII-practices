@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+</head>
+
+<body>
+
+    <h1>Perfil del usuario</h1>
+
+
+    <form>
+        <fieldset>
+            <legend>Datos del usuario:</legend>
+            <label for="rol">Rol:</label>
+            <br>
+            <input type="text" id="rol" name="rol" value="ESTUDIANTE" readonly>
+            <br>
+
+            <label for="nombre">Nombre completo:</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Perez Garcia" pattern=".{6,}"
+                title="6 o mas letras" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <br>
+            <input type="email" id="email" name="email" placeholder="Ej: juanperez@gmail.com" required>
+            <br>
+
+            <label for="edad">Edad:</label>
+            <br>
+            <input type="number" id="edad" name="edad" placeholder="Ingrese su edad..." required>
+            <br>
+
+            <label>Nacionalidad:</label>
+            <select id="nacionalidad" name="nacionalidad">
+                <option value="argentina">Argentina</option>
+                <option value="mexico">Mexico</option>
+                <option value="chile">Chile</option>
+                <option value="uruguay">Uruguay</option>
+                <option value="colombia">Colombia</option>
+                <option value="peru">Peru</option>
+                <option value="espana">España</option>
+                <option value="bolivia">Bolivia</option>
+            </select>
+            <br>
+
+            <label>Condicion laboral:</label>
+            <select id="cond-lab" name="cond-lab">
+                <option value="desempleado">Desempleado</option>
+                <option value="busqueda" selected>En Búsqueda Laboral</option>
+                <option value="part_time">Trabajo Part Time</option>
+                <option value="full_time">Trabajo Full Time</option>
+            </select>
+            <button type="submit">Guardar</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos personales:</legend>
+
+            <label>Gustos musicales:</label>
+            <input type="text" id="gustos-musicales" name="gustos-musicales" placeholder="Ingrese uno o mas..."
+                required>
+            <br>
+
+            <label>Comidas preferidas: </label>
+            <select>
+                <option value="pastas">Pastas</option>
+                <option value="pizza">Pizza</option>
+                <option value="verduras">Verduras</option>
+                <option value="milanesas">Milanesas</option>
+                <option value="hamburguesas">Hamburguesas</option>
+            </select>
+            <label>
+                <input type="checkbox" id="recordar-gustos" name="recordar-gustos">Recordar mis datos
+
+            </label>
+            <br>
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
